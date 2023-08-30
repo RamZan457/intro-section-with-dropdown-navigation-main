@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Epilogue", sans-serif;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-template-rows: 75px 1fr 0.3fr 20px;
+}
+p {
+  font-size: 18px;
+}
+h1 {
+  font-weight: 700;
+}
+/*################ Header Style ############*/
+header {
+  width: 100%;
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+.logo a {
+  padding-left: 75px;
+}
+header ul {
+  width: 40%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+header a {
+  text-decoration: none;
+}
+/* Header Buttons */
+.head-buttons {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header Last */
+#header-last {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#login {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 3px;
+}
+#register {
+  border: 1.7px solid hsl(0, 0%, 41%);
+  border-radius: 12px;
+  background-color: transparent;
+  padding: 10px 23px;
+  margin-left: 3px;
+}
+
+.main {
+  padding-left: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: last baseline;
+}
+.main h1 {
+  font-size: 75px;
+}
+.main button {
+  border: none;
+  border-radius: 10px;
+  padding: 13px 20px;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+}
+.article {
+  padding: 20px 20px 0 95px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section {
+  background-image: url("./images/image-hero-desktop.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-row: span 2;
+}
+footer {
+  margin-top: 2px;
+  grid-column: span 2;
+}
+/* already defind */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.features-dropdown {
+  position: absolute;
+  left: 15%;
+  width: max-content;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 2px 8px #ececec;
+}
+.features-dropdown a {
+  padding: 10px;
+}
+.features-dropdown li {
+  margin: 7px 3px;
+}
+.company-dropdown {
+  position: absolute;
+  left: 30%;
+  width: max-content;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 1px 2px 8px #ececec;
+}
+.company-dropdown a {
+  padding: 10px;
+}
+.company-dropdown li {
+  margin: 7px 3px;
+}
+
+.company-dropdown,
+.features-dropdown {
+  display: none;
+}
+
+#menu {
+  display: none;
+  position: relative;
+  margin: 10px;
+}
+
+@media (max-width: 1010px) {
+  .main,
+  .article {
+    padding-left: 45px;
+  }
+  .main h1 {
+    font-size: 50px;
+  }
+  header ul {
+    width: 70%;
+  }
+}
+@media (max-width: 750px) {
+  #menu {
+    display: block;
+  }
+
+  .logo a {
+    padding-left: 20px;
+  }
+  body {
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 400px repeat(2, 1fr) 20px;
+  }
+  header {
+    padding-top: 20px;
+    grid-column: 1/-1;
+    order: -2;
+  }
+  main {
+    grid-column: 1/-1;
+  }
+  section {
+    padding: 0;
+    grid-column: 1/-1;
+    grid-row: span 1;
+    order: -1;
+    background-image: url("./images/image-hero-mobile.png");
+    width: 100vw;
+    background-position: center;
+  }
+  article {
+    grid-column: 1/-1;
+  }
+  .article {
+    padding: 10px 0px;
+    flex-wrap: wrap;
+  }
+  footer {
+    margin-top: 10px;
+    grid-column: 1/-1;
+  }
+  .main {
+    padding: 0px;
+    display: block;
+  }
+  .main h1 {
+    margin-bottom: 7px;
+  }
+  .main p {
+    margin-bottom: 7px;
+  }
+  .main h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .head-buttons {
+    display: none;
+  }
+
+  /* Humburger Menu */
+  .menu-buttons {
+    z-index: 0;
+    bottom: 0;
+    height: 100vh;
+    right: 0%;
+    position: absolute;
+    width: 50vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 9px #ececec;
+  }
+  .menu-ul {
+    height: 60vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .menu-last {
+    width: auto !important;
+    flex-direction: column;
+  }
+  .menu-dropdown {
+    position: relative;
+    left: 0;
+  }
+  .menu-buttons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -370px;
+    width: 65vw;
+    height: 100vh;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}

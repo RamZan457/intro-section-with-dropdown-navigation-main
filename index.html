@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html"><img src="./images/logo.svg" alt="Logo" /></a>
+      </div>
+      <!-- Navbar -->
+      <div class="head-buttons">
+        <ul id="header-ul">
+          <li id="features">
+            <a href="#">
+              Features
+              <img
+                id="icon-arrow"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </a>
+            <!-- Features Dropdown -->
+            <ul class="features-dropdown">
+              <li>
+                <a href="#">
+                  <img src="./images/icon-todo.svg" alt="icon-todo" />
+                  &nbsp; Todo List
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon-calendar.svg" alt="icon-calendar" />
+                  &nbsp; Claneder
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon-reminders.svg" alt="icon-reminders" />
+                  &nbsp; Reminders
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/icon-planning.svg" alt="icon-planning" />
+                  &nbsp; Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li id="company">
+            <a href="#">
+              Company
+              <img
+                id="company-arrow"
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+              />
+            </a>
+
+            <ul class="company-dropdown">
+              <li><a href="#">History </a></li>
+              <li><a Our href="#">Our Team </a></li>
+              <li><a href="#">Blog </a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Careers</a></li>
+
+          <li><a href="#">About</a></li>
+        </ul>
+        <!-- Login and Register -->
+        <div id="header-last">
+          <button id="login">
+            <a href="#">Login</a>
+          </button>
+          <button id="register">
+            <a href="#">Register</a>
+          </button>
+        </div>
+      </div>
+
+      <div id="menu">
+        <img id="icon-menu" src="./images/icon-menu.svg" alt="icon-menu" />
+      </div>
+    </header>
+
+    <!-- ####### Main ###############-->
+    <main>
+      <div class="main">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+      </div>
+    </main>
+
+    <section></section>
+
+    <article>
+      <div class="article">
+        <img src="./images/client-databiz.svg" alt="client-databiz" />
+        <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+        <img src="./images/client-meet.svg" alt="client-meet" />
+        <img src="./images/client-maker.svg" alt="client-maker" />
+      </div>
+    </article>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://ramzan457.github.io/cybersecurity-portfolio/">
+        Mohammad Ramzan</a
+      >.
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
